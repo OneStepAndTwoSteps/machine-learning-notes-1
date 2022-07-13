@@ -163,7 +163,7 @@ k-v: 4G : Nokia
 
 为了得到query，key，value，一个$x$就得做3次乘法，那n个$x$就得做$3n$次乘法。为了比较高效的实现矩阵乘法，要进行类似matlab中的向量化操作，因为因为GPU中矩阵运算的复杂度是$O(1)$不是$O(N^2)$。如果我们能把上面的操作变为矩阵操作，那我们就能很好的利用GPU做并行计算。具体的矩阵操作如下图所示。
 
-![self-attention-gpu](PIC/self-attention-gpu.jpg)
+![self-attention-gpu](pic/self-attention-gpu.jpg)
 
 用公式表示即为
 $$
